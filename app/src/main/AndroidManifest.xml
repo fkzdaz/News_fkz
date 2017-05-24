@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fkz2.news_fkz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.example.fkz2.news_fkz.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.fkz2.news_fkz.ui.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.fkz2.news_fkz.ui.activity.ImageActivity"
+            android:theme="@style/AppTheme.Toolbar" />
+        <activity
+            android:name="com.example.fkz2.news_fkz.ui.activity.NightChatActivity"
+            android:theme="@style/AppTheme.Toolbar" />
+        <activity
+            android:name="com.example.fkz2.news_fkz.ui.activity.AudioActivity"
+            android:theme="@style/AppTheme.Toolbar" />
+        <activity android:name="com.example.fkz2.news_fkz.ui.activity.AudioOnlineActivity"
+            android:theme="@style/AppTheme.Toolbar"/>
+    </application>
+
+</manifest>
